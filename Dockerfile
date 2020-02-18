@@ -8,4 +8,4 @@ RUN pip install flask
 RUN pip install pyjwt
 RUN pip install gunicorn
 
-ENTRYPOINT ["gunicorn", "-b", ":5000", "main:APP"]
+ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]
